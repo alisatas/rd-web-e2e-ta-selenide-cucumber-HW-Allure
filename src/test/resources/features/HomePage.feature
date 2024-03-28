@@ -1,6 +1,6 @@
 Feature: As a User I want to test homepage feature
 
-  @Test @Login
+  @Login
   Scenario: User checks dynamic message
     Given openPage
     When User click buttons button
@@ -17,7 +17,7 @@ Feature: As a User I want to test homepage feature
       | username | surname | email         | age | salary | department |
       | Ali isa  | tas     | tasal@sdf.com | 34  | 3500   | QA         |
 
-  @Test @Login
+  @Login
   Scenario Outline: User edit a user2
     Given open WebTable Page
     Given user click edit button
